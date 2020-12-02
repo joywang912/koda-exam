@@ -32,21 +32,32 @@ const navList = [
 ];
 const HeaderNav = () => {
     const [active, setActive] = useState('home');
+    const [showNav, setShowNav] = useState(false);
 
-    return <ul className="nav header-nav font-slab">
-        {
-            navList.map(nav => {
-                return <li key={nav.displayName} className="nav-item">
-                    <a href={nav.link}
-                        className={`nav-link ${active === nav.displayName ? 'active' : ''}`}
-                        onClick={() => { setActive(nav.displayName); }}>
-                        {nav.displayName}
-                    </a>
-                </li>;
-            })
-        }
+    return <nav className="navbar navbar-expand-lg header-nav">
+        <button
+            className="navbar-toggler header-nav__toggle-button"
+            type="button"
+            onClick={() => { setShowNav(!showNav); }}>
+            <i className="fa fa-bars"></i>
+        </button>
+        <div className={`header-nav__list-container collapse navbar-collapse ${showNav ? 'show' : ''}`} id="navbarTogglerDemo01">
+            <ul className="navbar-nav header-nav-list font-slab">
+                {
+                    navList.map(nav => {
+                        return <li key={nav.displayName} className="nav-item header-nav-list__item">
+                            <a href={nav.link}
+                                className={`nav-link ${active === nav.displayName ? 'active' : ''}   header-nav-list__link`}
+                                onClick={() => { setActive(nav.displayName); }}>
+                                {nav.displayName}
+                            </a>
+                        </li>;
+                    })
+                }
 
-    </ul>;
+            </ul>
+        </div>
+    </nav>;
 };
 
 export default HeaderNav;

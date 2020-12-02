@@ -7,7 +7,7 @@ const BannerContent = () => {
     return <div className="banner-content ">
         <h1 className="font-slab" dangerouslySetInnerHTML={{ __html: heading }} />
         <h2>{subHeading}</h2>
-        <div className="margin-t-30">
+        <div className="mt-5">
             <button className="btn btn-primary">Find out more</button>
         </div>
     </div>;
