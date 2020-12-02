@@ -1,0 +1,11 @@
+@import "font";
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+  --content-width: 1440px;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
