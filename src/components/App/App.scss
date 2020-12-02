@@ -6,4 +6,12 @@
   height: 75rem;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 991px) {
+    height: 58rem;
+  }
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 }

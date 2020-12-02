@@ -3,8 +3,11 @@ header {
   display: flex;
   justify-content: space-between;
 
-  &__logo {
+  .header__logo {
     max-width: 28rem;
+    @media (max-width: 768px) {
+      width: 20rem;
+    }
   }
 }
 
