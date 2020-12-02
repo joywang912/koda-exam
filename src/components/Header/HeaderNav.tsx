@@ -33,7 +33,7 @@ const navList = [
 const HeaderNav = () => {
     const [active, setActive] = useState('home');
 
-    return <ul className="nav header-nav">
+    return <ul className="nav header-nav font-slab">
         {
             navList.map(nav => {
                 return <li key={nav.displayName} className="nav-item">
