@@ -7,6 +7,7 @@ import SectionTopRight from '../SectionTopRight';
 import SectionMid from '../SectionMid';
 import './App.scss';
 import Gallery from '../Gallery';
+import Team from '../Team';
 
 function App() {
   return (
@@ -33,6 +34,12 @@ function App() {
         </div>
       </div>
       <Gallery />
+      <div className="main-container">
+        <div className="flex-1">
+
+          <Team />
+        </div>
+      </div>
     </div>
   );
 }

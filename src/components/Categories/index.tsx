@@ -30,7 +30,7 @@ const categories = [
 const Categories = () => {
     return <div className="categories">
         {categories.map((categories, idx) => {
-            return <div className={`categories__item font-slab ${categories.bannerClassName}`}>
+            return <div key={idx} className={`categories__item font-slab ${categories.bannerClassName}`}>
                 <div className="categories__item-text">
                     {categories.displayName}
                 </div>
