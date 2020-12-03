@@ -4,6 +4,7 @@ import Categories from '../Categories';
 import Header from '../Header';
 import SectionTopLeft from '../SectionTopLeft';
 import SectionTopRight from '../SectionTopRight';
+import SectionMid from '../SectionMid';
 import './App.scss';
 
 function App() {
@@ -22,6 +23,14 @@ function App() {
         </div>
       </div>
       <Categories />
+      <div className="main-container">
+        <div className="flex-1">
+          <SectionMid />
+        </div>
+        <div className="flex-1">
+          <SectionMid />
+        </div>
+      </div>
     </div>
   );
 }
