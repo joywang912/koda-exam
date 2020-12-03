@@ -1,5 +1,6 @@
 import React from 'react';
 import BannerContent from '../BannerContent';
+import Categories from '../Categories';
 import Header from '../Header';
 import SectionTopLeft from '../SectionTopLeft';
 import SectionTopRight from '../SectionTopRight';
@@ -20,7 +21,7 @@ function App() {
           <SectionTopRight />
         </div>
       </div>
-
+      <Categories />
     </div>
   );
 }

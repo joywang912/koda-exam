@@ -1,0 +1,81 @@
+.categories {
+  &__item {
+    color: #fff;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    background-size: 200% 100%;
+    cursor: pointer;
+    transition: background-position 1s;
+    background-position: 70% 0;
+    padding: 1rem 0;
+
+    @media (max-width: 991px) {
+      font-size: 2rem;
+    }
+  }
+  &__item.banner-grey {
+    background-image: linear-gradient(
+      to right,
+      rgba(193, 193, 193, 1) 50%,
+      rgba(193, 193, 193, 0.2) 50%
+    );
+
+    background-position: 70% 0;
+  }
+
+  &__item.banner-red {
+    background-image: linear-gradient(
+      to right,
+      rgba(223, 97, 74, 1) 50%,
+      rgba(223, 97, 74, 0.2) 50%
+    );
+
+    background-position: 65% 0;
+  }
+
+  &__item.banner-yellow-green {
+    background-image: linear-gradient(
+      to right,
+      rgba(179, 211, 48, 1) 50%,
+      rgba(179, 211, 48, 0.2) 50%
+    );
+    background-position: 60% 0;
+  }
+
+  &__item.banner-blue {
+    background-image: linear-gradient(
+      to right,
+      rgba(33, 133, 227, 1) 50%,
+      rgba(33, 133, 227, 0.2) 50%
+    );
+    background-position: 55% 0;
+  }
+
+  &__item.banner-dark-green {
+    background-image: linear-gradient(
+      to right,
+      rgba(3, 128, 114, 1) 50%,
+      rgba(3, 128, 114, 0.2) 50%
+    );
+    background-position: 50% 0;
+  }
+
+  &__item.banner-yellow {
+    background-image: linear-gradient(
+      to right,
+      rgba(208, 146, 43, 1) 50%,
+      rgba(208, 146, 43, 0.2) 50%
+    );
+    background-position: 45% 0;
+  }
+
+  &__item:hover {
+    background-position: 0 0;
+  }
+
+  &__item-text {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 1rem 5rem;
+  }
+}
