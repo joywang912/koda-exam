@@ -4,5 +4,9 @@
     word-spacing: 3px;
     font-size: 4.5rem;
     font-weight: 400;
+
+    @media (max-width: 768px) {
+      font-size: 3.5rem;
+    }
   }
 }
