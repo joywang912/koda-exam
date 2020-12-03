@@ -2,6 +2,7 @@ import React from 'react';
 import BannerContent from '../BannerContent';
 import Header from '../Header';
 import SectionTopLeft from '../SectionTopLeft';
+import SectionTopRight from '../SectionTopRight';
 import './App.scss';
 
 function App() {
@@ -12,7 +13,12 @@ function App() {
         <BannerContent />
       </div>
       <div className="main-container">
-        <SectionTopLeft />
+        <div className="flex-1">
+          <SectionTopLeft />
+        </div>
+        <div className="flex-1">
+          <SectionTopRight />
+        </div>
       </div>
 
     </div>

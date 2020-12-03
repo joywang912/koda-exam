@@ -20,11 +20,11 @@ const SectionTopLeft = () => {
       </div>
       <div className="section-top-left__link">
         <a href="#">
-          <i class="fas fa-angle-right text-warning"></i> Lorem ipsum dolor sit
+          <i className="fas fa-angle-right text-warning"></i> Lorem ipsum dolor sit
           amet, consetetur sadipscing
         </a>
         <a href="#">
-          <i class="fas fa-angle-right text-warning"></i> Sed diam nonumy eirmod
+          <i className="fas fa-angle-right text-warning"></i> Sed diam nonumy eirmod
           tempor invidunt
         </a>
       </div>
