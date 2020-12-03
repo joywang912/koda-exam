@@ -6,6 +6,7 @@ import SectionTopLeft from '../SectionTopLeft';
 import SectionTopRight from '../SectionTopRight';
 import SectionMid from '../SectionMid';
 import './App.scss';
+import Gallery from '../Gallery';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <SectionMid />
         </div>
       </div>
+      <Gallery />
     </div>
   );
 }
