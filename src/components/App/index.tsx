@@ -9,11 +9,14 @@ import './App.scss';
 import Gallery from '../Gallery';
 import Team from '../Team';
 import Footer from '../Footer';
+import Banner from '../Banner';
 
 function App() {
   return (
     <div className="App">
+
       <div className="top-banner">
+        <Banner />
         <Header />
         <BannerContent />
       </div>
