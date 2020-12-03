@@ -15,3 +15,13 @@
     height: auto;
   }
 }
+
+.main-container {
+  max-width: var(--content-width);
+  display: flex;
+  margin: 5rem auto;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+}
