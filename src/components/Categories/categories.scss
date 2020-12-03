@@ -12,6 +12,10 @@
     @media (max-width: 991px) {
       font-size: 2rem;
     }
+
+    @media (max-width: 768px) {
+      padding: 0.5rem 0;
+    }
   }
   &__item.banner-grey {
     background-image: linear-gradient(
@@ -21,6 +25,10 @@
     );
 
     background-position: 70% 0;
+
+    @media (max-width: 768px) {
+      background-position: 50% 0;
+    }
   }
 
   &__item.banner-red {
@@ -31,6 +39,10 @@
     );
 
     background-position: 65% 0;
+
+    @media (max-width: 768px) {
+      background-position: 44% 0;
+    }
   }
 
   &__item.banner-yellow-green {
@@ -40,6 +52,10 @@
       rgba(179, 211, 48, 0.2) 50%
     );
     background-position: 60% 0;
+
+    @media (max-width: 768px) {
+      background-position: 38% 0;
+    }
   }
 
   &__item.banner-blue {
@@ -49,6 +65,10 @@
       rgba(33, 133, 227, 0.2) 50%
     );
     background-position: 55% 0;
+
+    @media (max-width: 768px) {
+      background-position: 32% 0;
+    }
   }
 
   &__item.banner-dark-green {
@@ -58,6 +78,9 @@
       rgba(3, 128, 114, 0.2) 50%
     );
     background-position: 50% 0;
+    @media (max-width: 768px) {
+      background-position: 26% 0;
+    }
   }
 
   &__item.banner-yellow {
@@ -67,6 +90,9 @@
       rgba(208, 146, 43, 0.2) 50%
     );
     background-position: 45% 0;
+    @media (max-width: 768px) {
+      background-position: 20% 0;
+    }
   }
 
   &__item:hover {
