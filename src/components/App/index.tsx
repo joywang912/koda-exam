@@ -8,6 +8,7 @@ import SectionMid from '../SectionMid';
 import './App.scss';
 import Gallery from '../Gallery';
 import Team from '../Team';
+import Footer from '../Footer';
 
 function App() {
   return (
@@ -36,8 +37,12 @@ function App() {
       <Gallery />
       <div className="main-container">
         <div className="flex-1">
-
           <Team />
+        </div>
+      </div>
+      <div className="main-container">
+        <div className="flex-1">
+          <Footer />
         </div>
       </div>
     </div>
